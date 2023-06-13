@@ -4,8 +4,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/JosefinSans-Light.woff') format('woff'),
-        url('../fonts/JosefinSans-Light.woff') format('woff');
+    src: url('../fonts/JosefinSans-Light.woff') format('woff'), url('../fonts/JosefinSans-Light.woff') format('woff');
 }
 
 @font-face {
@@ -13,8 +12,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/JosefinSans-Regular.woff') format('woff'),
-        url('../fonts/JosefinSans-Regular.woff') format('woff');
+    src: url('../fonts/JosefinSans-Regular.woff') format('woff'), url('../fonts/JosefinSans-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -22,8 +20,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/JosefinSans-Bold.woff') format('woff'),
-        url('../fonts/JosefinSans-Bold.woff') format('woff');
+    src: url('../fonts/JosefinSans-Bold.woff') format('woff'), url('../fonts/JosefinSans-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -31,8 +28,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/Poppins-Light.woff') format('woff'),
-        url('../fonts/Poppins-Light.woff') format('woff');
+    src: url('../fonts/Poppins-Light.woff') format('woff'), url('../fonts/Poppins-Light.woff') format('woff');
 }
 
 @font-face {
@@ -40,8 +36,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/Poppins-Regular.woff') format('woff'),
-        url('../fonts/Poppins-Regular.woff') format('woff');
+    src: url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -49,8 +44,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/Poppins-SemiBold.woff') format('woff'),
-        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    src: url('../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.woff') format('woff');
 }
 
 @font-face {
@@ -58,8 +52,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/Poppins-Bold.woff') format('woff'),
-        url('../fonts/Poppins-Bold.woff') format('woff');
+    src: url('../fonts/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -67,4 +60,28 @@
     font-style: normal;
     font-weight: normal;
     src: local('Alfa Slab One Regular'), url('../fonts/AlfaSlabOne-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pokemon-Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Pokemon-Solid.woff') format('woff'), url('../fonts/Pokemon-Solid.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Sketchslab-bold';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Sketchslab-bold.woff') format('woff'), url('../fonts/Sketchslab-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pebble-bold';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Pebble-bold.woff') format('woff'), url('../fonts/Pebble-bold.woff') format('woff');
 }

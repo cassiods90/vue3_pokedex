@@ -19,8 +19,8 @@
 
         <!-- Carousel Items  -->
         <swiper-slide v-for="(item, index) in 10" :key="index">
-            <a href="http://placehold.it/150x150" class="d-flex flex-column justify-content-center align-items-center">
-                <img src="http://placehold.it/150x150" alt="" />
+            <a class="d-flex flex-column justify-content-center align-items-center">
+                <img src="@/assets/image/alakazam.png" alt="" />
                 <span class="d-flex flex-column justify-content-center align-items-center">Slide {{ item }}</span>
             </a>
         </swiper-slide>
@@ -35,66 +35,49 @@
     </swiper>
 </template>
 
-<script>
+<script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper'
 import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Autoplay, Navigation, Pagination])
 
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
+const breakpoints = {
+    1: {
+        slidesPerView: 2,
+        spaceBetween: 15,
     },
-    setup() {
-        const breakpoints = {
-            1: {
-                slidesPerView: 2,
-                spaceBetween: 15,
-            },
-            744: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 5,
-                spaceBetween: 30,
-            },
-        }
-
-        const autoplay = {
-            delay: 55000,
-        }
-
-        const navigation = {
-            nextEl: '.carousel-navigation.arrow-left',
-            prevEl: '.carousel-navigation.arrow-right',
-        }
-
-        const pagination = {
-            el: '.carousel-pagination',
-            type: 'bullets',
-            clickable: true,
-        }
-
-        const onSwiper = (swiper) => {
-            // console.log(swiper)
-        }
-
-        const onSlideChange = () => {
-            // console.log('slide change')
-        }
-
-        return {
-            breakpoints,
-            autoplay,
-            navigation,
-            pagination,
-            onSwiper,
-            onSlideChange,
-        }
+    744: {
+        slidesPerView: 3,
+        spaceBetween: 20,
     },
+    1024: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+    },
+}
+
+const autoplay = {
+    delay: 500,
+}
+
+const navigation = {
+    nextEl: '.carousel-navigation.arrow-left',
+    prevEl: '.carousel-navigation.arrow-right',
+}
+
+const pagination = {
+    el: '.carousel-pagination',
+    type: 'bullets',
+    clickable: true,
+}
+
+const onSwiper = (swiper) => {
+    // console.log(swiper)
+}
+
+const onSlideChange = () => {
+    // console.log('slide change')
 }
 </script>
 

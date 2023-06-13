@@ -3,18 +3,47 @@
     display: block;
     @include fluid-type(320px, 1680px, 12px, 14px);
     font-family: $PoppinsRegular;
+    color: $white;
     text-align: left;
     margin: 0;
     padding: 0;
     line-height: 1;
+    &.text-loader {
+        @include fluid-type(320px, 1680px, 48px, 68px);
+        font-family: $PokemonFont;
+        letter-spacing: 10px;
+        color: $secColor;
+        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-color: $baseColor;
+    }
+    &.text-logo {
+        @include fluid-type(320px, 1680px, 28px, 38px);
+        font-family: $PokemonFont;
+        letter-spacing: 5px;
+        color: $secColor;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: $baseColor;
+    }
+    &.text-header {
+        @include fluid-type(320px, 1680px, 16px, 20px);
+        font-family: $Pebble;
+        color: $white;
+    }
+
+    &.text-footer {
+        @include fluid-type(320px, 1680px, 16px, 20px);
+        color: $white;
+    }
+
     &.bigtitle {
-        @include fluid-type(320px, 1680px, 38px, 48px);
-        font-family: $AlfaSlabOneRegular;
+        @include fluid-type(320px, 1680px, 40px, 60px);
+        font-family: $Sketchslab;
+        color: $secColor;
         line-height: 1.3;
     }
     &.title {
-        @include fluid-type(320px, 1680px, 24px, 28px);
-        font-family: $PoppinsBold;
+        @include fluid-type(320px, 1680px, 20px, 24px);
+        font-family: $PoppinsRegular;
         line-height: 1.2;
     }
     &.subtitle {

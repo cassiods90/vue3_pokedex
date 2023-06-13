@@ -1,3 +1,66 @@
+.project-presentation {
+    position: relative;
+    min-height: calc(100vh - 112px);
+    height: 100%;
+    margin: -30px 0;
+    .text {
+        padding: 30px 30px;
+    }
+    .presentation-img {
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        height: 140px;
+        @include fluid-min-height(992px, 1920px, 140px, 280px);
+    }
+}
+
+.home-carousel {
+    height: 100%;
+    .home-carousel-item {
+        img {
+            max-width: 70%;
+            // max-height: 150px;
+        }
+    }
+    .carousel-navigation {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        z-index: 1;
+        &:hover {
+            svg {
+                path {
+                    fill: $secColor;
+                }
+            }
+        }
+        &.arrow-right {
+            left: auto;
+            right: 5px;
+        }
+        svg {
+            width: 50px;
+            height: 50px;
+            path {
+                @include transition();
+                fill: $white;
+            }
+        }
+    }
+    .carousel-pagination {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            background: rgba($secColor, 1);
+        }
+    }
+}
+
 @media (min-width: 768px) {
 }
 

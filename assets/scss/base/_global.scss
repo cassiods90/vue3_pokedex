@@ -83,7 +83,7 @@ video {
     padding: 0;
     border: 0;
     font-family: $PoppinsRegular;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
     &:hover {
         text-decoration: none;
@@ -93,7 +93,7 @@ video {
 
 html,
 body {
-    background: $background-gradient-02;
+    background: $background-gradient-01;
     width: 100%;
     max-width: 100vw;
     height: 100vh;
@@ -104,13 +104,67 @@ body {
     @include transition2(all, 0.5s, ease-in-out);
 }
 
-svg,
-path {
-    fill: $white;
-}
+// svg,
+// path {
+//     fill: $white;
+// }
 
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($black, 0.4);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    span {
+        padding-top: 50px;
+    }
+    .loader-pokeball {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        background: linear-gradient(to bottom, $thirdColor 50%, $white 50%);
+        border-radius: 50%;
+        border: 15px solid $black;
+        animation: spin 2s linear infinite;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 20px;
+            width: 100%;
+            background: $black;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 114px;
+            width: 114px;
+            border-radius: 50%;
+            background: $white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset 0 0 0 20px $black, inset 0 0 0 25px $white, inset 0 0 0 30px $black;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
 }

@@ -1,3 +1,15 @@
+.pages {
+    min-height: calc(100vh - 112px);
+    &.home {
+    }
+    &.minigame-page {
+    }
+    &.poke-search-page {
+    }
+    &.about-page {
+    }
+}
+
 @media (min-width: 768px) {
 }
 

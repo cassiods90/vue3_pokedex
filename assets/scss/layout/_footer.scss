@@ -1,0 +1,23 @@
+.footer-content {
+    .personal-link {
+        a {
+            margin-left: 20px;
+            @include transition();
+            &:hover {
+                .cls-2 {
+                    fill: $secColor;
+                }
+            }
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

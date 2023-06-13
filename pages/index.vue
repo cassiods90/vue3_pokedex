@@ -1,16 +1,17 @@
 <template>
-    <div>
-        <h1>Nuxt 3 Home</h1>
+    <div class="pages home">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <HomeTextProject />
+            </div>
+            <div class="col-12 col-sm-6">
+                <!-- <HomeSwiperCarouselExample /> -->
+                <HomePokesCarousel />
+            </div>
+        </div>
 
-        <br /><br />
-
-        <HomePiniaExample />
-
-        <br /><br />
-
-        <HomeSwiperCarouselExample />
-
-        <br /><br />
+        <!-- <HomePiniaExample /> -->
+        <!-- <AppLoader /> -->
     </div>
 </template>
 

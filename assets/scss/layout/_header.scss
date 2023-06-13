@@ -1,0 +1,44 @@
+.logo {
+    img {
+        width: 73px;
+    }
+    .logo-content {
+        padding: 0 0 0 20px;
+    }
+}
+
+.header-menu {
+    margin: 0 -10px;
+    .header-menu-item {
+        margin: 0 10px;
+        position: relative;
+        display: block;
+        @include transition();
+        &:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            background: $secColor;
+            height: 1px;
+            right: 0;
+            bottom: -10px;
+            @include transition();
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            color: $secColor;
+            &:after {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

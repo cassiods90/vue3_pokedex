@@ -1,13 +1,57 @@
 /* ---------- COLORS ---------- */
 $white: #ffffff;
 $black: #000000;
+$baseColor: #205cac;
+$secColor: #ffcc01;
+$thirdColor: #ff120d;
+
+/* ---------- POKE TYPE COLORS ---------- */
+$typebug: #8cb230;
+$typedark: #58575f;
+$typedragon: #0f6ac0;
+$typeelectric: #eed535;
+$typefairy: #ed6ec7;
+$typefighting: #d04164;
+$typefire: #fd7d24;
+$typeflying: #748fc9;
+$typeghost: #556aae;
+$typegrass: #62b957;
+$typeground: #dd7748;
+$typeice: #61cec0;
+$typenormal: #9da0aa;
+$typepoison: #a552cc;
+$typepsychic: #ea5d60;
+$typerock: #baab82;
+$typesteel: #417d9a;
+$typewater: #4a90da;
+
+/* ---------- POKE BACKGROUND COLORS ---------- */
+$backgroundbug: #8bd674;
+$backgrounddark: #6f6e78;
+$backgrounddragon: #7383b9;
+$backgroundelectric: #f2cb55;
+$backgroundfairy: #eba8c3;
+$backgroundfighting: #eb4971;
+$backgroundfire: #ffa756;
+$backgroundflying: #83a2e3;
+$backgroundghost: #8571be;
+$backgroundgrass: #8bbe8a;
+$backgroundground: #f78551;
+$backgroundice: #91d8df;
+$backgroundnormal: #b5b9c4;
+$backgroundpoison: #9f6e97;
+$backgroundpsychic: #ff6568;
+$backgroundrock: #d4c294;
+$backgroundsteel: #4c91b2;
+$backgroundwater: #58abf6;
 
 /* ---------- BACKGROUND COLORS ---------- */
-$background-black: #000;
-$background-black01: #121214;
-
-$background-gradient-01: linear-gradient(90deg, #121214, #1e1e26);
-$background-gradient-02: linear-gradient(to right, #c9d6ff, #e2e2e2);
+$background-gradient-01: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+$background-gradient-02: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
+$background-gradient-03: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+$background-gradient-04: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%);
+$background-gradient-05: radial-gradient(circle 926px at 2.7% 11%, rgba(17, 29, 94, 1) 0%, rgba(6, 57, 84, 1) 90%);
+$background-gradient-06: linear-gradient(to right, #c9d6ff, #e2e2e2);
 
 /* ---------- FONTS ---------- */
 $JosefinSansLight: 'JosefinSans-Light';
@@ -18,3 +62,7 @@ $PoppinsRegular: 'Poppins-Regular';
 $PoppinsSemiBold: 'Poppins-SemiBold';
 $PoppinsBold: 'Poppins-Bold';
 $AlfaSlabOneRegular: 'Alfa Slab One Regular';
+
+$PokemonFont: 'Pokemon-Solid';
+$Sketchslab: 'Sketchslab-bold';
+$Pebble: 'Pebble-bold';

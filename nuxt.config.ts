@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: ['~/assets/scss/style.scss', 'bootstrap/dist/css/bootstrap.min.css'],
 
-    devtools: { enabled: true },
+    devtools: { enabled: false },
 
     modules: ['@pinia/nuxt'],
 
