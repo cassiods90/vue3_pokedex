@@ -31,7 +31,7 @@
     }
 
     &.text-footer {
-        @include fluid-type(320px, 1680px, 16px, 20px);
+        @include fluid-type(320px, 1680px, 13px, 20px);
         color: $white;
     }
 

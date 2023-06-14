@@ -4,7 +4,8 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center">
                     <HeaderLogo />
-                    <HeaderNavbar />
+                    <HeaderNavbarMobile />
+                    <HeaderNavbarDesktop />
                 </div>
             </div>
         </div>
