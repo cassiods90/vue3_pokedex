@@ -1,21 +1,17 @@
 .project-presentation {
     position: relative;
-    min-height: calc(100vh - 112px);
     height: 100%;
-    margin: -30px 0;
     .text {
+        text-align: center;
         padding: 30px 30px;
     }
     .presentation-img {
-        position: absolute;
-        bottom: 0;
-        width: 70%;
-        height: 140px;
-        @include fluid-min-height(992px, 1920px, 140px, 280px);
+        display: none;
     }
 }
 
 .home-carousel {
+    padding-top: 30px;
     height: 100%;
     .home-carousel-item {
         img {
@@ -27,6 +23,7 @@
         cursor: pointer;
         position: absolute;
         top: 50%;
+        margin-top: -25px;
         left: 5px;
         z-index: 1;
         &:hover {
@@ -62,7 +59,77 @@
 }
 
 @media (min-width: 768px) {
+    .project-presentation {
+        padding: 0 100px;
+        height: calc(50vh - 112px);
+    }
+
+    .home-carousel {
+        .home-carousel-item {
+            img {
+                max-width: 50%;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
+    .project-presentation {
+        padding: 0 200px;
+    }
+    .home-carousel {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .project-presentation {
+        min-height: calc(100vh - 112px);
+        margin: -30px 0;
+        padding: 0;
+        .presentation-img {
+            display: block;
+            width: 70%;
+            height: 140px;
+            @include fluid-min-height(992px, 1920px, 140px, 280px);
+        }
+    }
+    .home-carousel {
+        .home-carousel-item {
+            img {
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1680px) {
+    .project-presentation {
+        .presentation-img {
+            margin-top: 200px;
+        }
+    }
+    .home-carousel {
+        .home-carousel-item {
+            img {
+                max-width: 70%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    .project-presentation {
+        .presentation-img {
+            height: 300px;
+            width: 700px;
+        }
+    }
+    .home-carousel {
+        .home-carousel-item {
+            img {
+                max-width: 665px;
+            }
+        }
+    }
 }
