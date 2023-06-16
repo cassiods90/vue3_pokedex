@@ -17,25 +17,23 @@ import rock from './rock.jpg'
 import steel from './steel.jpg'
 import water from './water.jpg'
 
-const badges = {
-  bug,
-  dark,
-  dragon,
-  electric,
-  fairy,
-  fighting,
-  fire,
-  flying,
-  ghost,
-  grass,
-  ground,
-  ice,
-  normal,
-  poison,
-  psychic,
-  rock,
-  steel,
-  water,
+export default {
+    bug,
+    dark,
+    dragon,
+    electric,
+    fairy,
+    fighting,
+    fire,
+    flying,
+    ghost,
+    grass,
+    ground,
+    ice,
+    normal,
+    poison,
+    psychic,
+    rock,
+    steel,
+    water,
 }
-
-export { badges }

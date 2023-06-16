@@ -1,0 +1,124 @@
+.results-filter {
+    padding: 50px 0 100px;
+    .filter-search {
+        position: relative;
+        input {
+            padding: 0 15px;
+            width: 450px;
+            height: 40px;
+            outline: 0;
+            border: 0;
+            border-radius: 99px;
+            background-color: rgba($white, 0.1);
+            color: $white;
+            @include transition();
+            &::placeholder {
+                color: $white;
+            }
+            &:focus-visible {
+                box-shadow: rgba($secColor, 0.2) 0px 5px 15px 0px;
+            }
+        }
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: $secColor;
+            position: absolute;
+            top: 4px;
+            right: 15px;
+        }
+    }
+
+    .filter-generations {
+        margin: 30px -20px 0;
+        .gen-items {
+            .gen-item {
+                width: 200px;
+                margin: 10px 20px;
+                padding: 15px;
+                cursor: pointer;
+                border-radius: 15px;
+                border: 1px solid rgba($secColor, 0.5);
+                box-shadow: rgba($secColor, 0.25) 0px 6px 12px -2px, rgba($secColor, 0.3) 0px 3px 7px -3px;
+                @include transition();
+                &:hover,
+                &.active {
+                    span {
+                        color: rgba($secColor, 1);
+                    }
+                    background: linear-gradient(90deg, transparent, rgba($secColor, 0.1));
+                    box-shadow: 0 20px 25px -5px $secColor, 0 10px 10px -5px $secColor;
+                    box-shadow: rgba($secColor, 0.2) 0px 20px 30px;
+                }
+                span {
+                    @include transition();
+                }
+                img {
+                }
+            }
+        }
+    }
+}
+
+.pokemon-list {
+    // padding: 30px;
+    // margin: -30px -15px;
+    .pokemon-card {
+        position: relative;
+        width: 390px;
+        height: 150px;
+        margin: 30px 20px;
+        padding: 30px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        @include transition();
+        &:hover {
+            .card-image {
+                transform: scale(1.15);
+                top: -38%;
+            }
+        }
+        .card-content {
+            svg {
+                position: absolute;
+                top: 0;
+            }
+            .poke-id {
+            }
+            .poke-name {
+                padding: 10px 0;
+            }
+            .poke-types {
+                margin: 0 -5px;
+                img {
+                    margin: 0 5px;
+                    border-radius: 5px;
+                    // width: 61px;
+                    // height: 25px;
+                }
+            }
+        }
+        .card-image {
+            @include transition();
+            position: absolute;
+            top: -30%;
+            right: 0;
+            width: 180px;
+            z-index: 2;
+            img {
+            }
+        }
+
+        .icon-pokeball {
+            position: absolute;
+            top: 17px;
+            right: 20px;
+            transform: scale(1.3);
+        }
+    }
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

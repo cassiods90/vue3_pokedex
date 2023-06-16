@@ -34,6 +34,22 @@
         @include fluid-type(320px, 1680px, 13px, 20px);
         color: $white;
     }
+    &.poke-id {
+        font-family: $PoppinsBold;
+        color: $baseColor;
+        font-size: 18px;
+    }
+    &.poke-name {
+        font-family: $AlfaSlabOneRegular;
+        color: $white;
+        font-size: 28px;
+        text-transform: capitalize;
+    }
+    &.text-filter {
+        font-family: $AlfaSlabOneRegular;
+        color: $white;
+        font-size: 18px;
+    }
 
     &.bigtitle {
         @include fluid-type(320px, 1680px, 40px, 60px);

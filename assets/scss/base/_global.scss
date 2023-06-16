@@ -122,7 +122,7 @@ img {
     background: rgba($black, 0.4);
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 100;
     span {
         padding-top: 50px;
     }
@@ -166,5 +166,166 @@ img {
                 transform: rotate(360deg);
             }
         }
+    }
+}
+
+.backgroundbug {
+    background: $backgroundbug;
+    box-shadow: rgba($backgroundbug, 0.15) 0px 15px 25px, rgba($backgroundbug, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundbug, 10%);
+        box-shadow: rgba($backgroundbug, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgrounddark {
+    background: $backgrounddark;
+    box-shadow: rgba($backgrounddark, 0.15) 0px 15px 25px, rgba($backgrounddark, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgrounddark, 10%);
+        box-shadow: rgba($backgrounddark, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgrounddragon {
+    background: $backgrounddragon;
+    box-shadow: rgba($backgrounddragon, 0.15) 0px 15px 25px, rgba($backgrounddragon, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgrounddragon, 10%);
+        box-shadow: rgba($backgrounddragon, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundelectric {
+    background: $backgroundelectric;
+    box-shadow: rgba($backgroundelectric, 0.15) 0px 15px 25px, rgba($backgroundelectric, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundelectric, 10%);
+        box-shadow: rgba($backgroundelectric, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundfairy {
+    background: $backgroundfairy;
+    box-shadow: rgba($backgroundfairy, 0.15) 0px 15px 25px, rgba($backgroundfairy, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundfairy, 10%);
+        box-shadow: rgba($backgroundfairy, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundfighting {
+    background: $backgroundfighting;
+    box-shadow: rgba($backgroundfighting, 0.15) 0px 15px 25px, rgba($backgroundfighting, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundfighting, 10%);
+        box-shadow: rgba($backgroundfighting, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundfire {
+    background: $backgroundfire;
+    box-shadow: rgba($backgroundfire, 0.15) 0px 15px 25px, rgba($backgroundfire, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundfire, 10%);
+        box-shadow: rgba($backgroundfire, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundflying {
+    background: $backgroundflying;
+    box-shadow: rgba($backgroundflying, 0.15) 0px 15px 25px, rgba($backgroundflying, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundflying, 10%);
+        box-shadow: rgba($backgroundflying, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundghost {
+    background: $backgroundghost;
+    box-shadow: rgba($backgroundghost, 0.15) 0px 15px 25px, rgba($backgroundghost, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundghost, 10%);
+        box-shadow: rgba($backgroundghost, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundgrass {
+    background: $backgroundgrass;
+    box-shadow: rgba($backgroundgrass, 0.15) 0px 15px 25px, rgba($backgroundgrass, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundgrass, 10%);
+        box-shadow: rgba($backgroundgrass, 0.2) 0px 20px 30px;
+    }
+}
+.backgroundground {
+    background: $backgroundground;
+    box-shadow: rgba($backgroundground, 0.15) 0px 15px 25px, rgba($backgroundground, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundground, 10%);
+        box-shadow: rgba($backgroundground, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundice {
+    background: $backgroundice;
+    box-shadow: rgba($backgroundice, 0.15) 0px 15px 25px, rgba($backgroundice, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundice, 10%);
+        box-shadow: rgba($backgroundice, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundnormal {
+    background: $backgroundnormal;
+    box-shadow: rgba($backgroundnormal, 0.15) 0px 15px 25px, rgba($backgroundnormal, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundnormal, 10%);
+        box-shadow: rgba($backgroundnormal, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundpoison {
+    background: $backgroundpoison;
+    box-shadow: rgba($backgroundpoison, 0.15) 0px 15px 25px, rgba($backgroundpoison, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundpoison, 10%);
+        box-shadow: rgba($backgroundpoison, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundpsychic {
+    background: $backgroundpsychic;
+    box-shadow: rgba($backgroundpsychic, 0.15) 0px 15px 25px, rgba($backgroundpsychic, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundpsychic, 10%);
+        box-shadow: rgba($backgroundpsychic, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundrock {
+    background: $backgroundrock;
+    box-shadow: rgba($backgroundrock, 0.15) 0px 15px 25px, rgba($backgroundrock, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundrock, 10%);
+        box-shadow: rgba($backgroundrock, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundsteel {
+    background: $backgroundsteel;
+    box-shadow: rgba($backgroundsteel, 0.15) 0px 15px 25px, rgba($backgroundsteel, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundsteel, 10%);
+        box-shadow: rgba($backgroundsteel, 0.2) 0px 20px 30px;
+    }
+}
+
+.backgroundwater {
+    background: $backgroundwater;
+    box-shadow: rgba($backgroundwater, 0.15) 0px 15px 25px, rgba($backgroundwater, 0.05) 0px 5px 10px;
+    &:hover {
+        background: darken($backgroundwater, 10%);
+        box-shadow: rgba($backgroundwater, 0.2) 0px 20px 30px;
     }
 }
