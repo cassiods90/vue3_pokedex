@@ -29,7 +29,9 @@
     height: 100%;
     background: $white;
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px;
+    z-index: 1;
+    position: relative;
 }
 
 .poke-details {
@@ -136,6 +138,67 @@
     }
 }
 
+.poke-column {
+    position: relative;
+    height: 100%;
+    padding: 20px 0;
+    &:hover {
+        .pokeball {
+            .pokeball-inner {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.pokeball {
+    width: 100%;
+    position: absolute;
+    top: -90px;
+
+    .pokeball-inner {
+        position: relative;
+        height: 180px;
+        width: 180px;
+        background: linear-gradient(to bottom, $thirdColor 50%, $white 50%);
+        border-radius: 50%;
+        border: 15px solid $black;
+        @include transition();
+        // animation: spin 2s linear infinite;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 100%;
+            background: $black;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background: $white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset 0 0 0 10px $black, inset 0 0 0 20px $white, inset 0 0 0 25px $black;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
 @media (min-width: 768px) {
     .poke-data {
         padding: 50px 0;
@@ -154,6 +217,9 @@
                 }
             }
         }
+    }
+    .poke-infos-card {
+        padding: 30px;
     }
 }
 

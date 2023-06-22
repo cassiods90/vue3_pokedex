@@ -3,14 +3,23 @@
         <div class="container-fluid">
             <PokemonPokeData v-if="pokePage.pokeItem" />
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <PokemonPokeDetails v-if="pokePage.pokeItem" />
+                <div class="col-12 col-xl-4">
+                    <div class="poke-column">
+                        <!-- <PokemonPokeball /> -->
+                        <PokemonPokeDetails v-if="pokePage.pokeItem" />
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <PokemonPokeStats v-if="pokePage.pokeItem" />
+                <div class="col-12 col-xl-4">
+                    <div class="poke-column">
+                        <!-- <PokemonPokeball /> -->
+                        <PokemonPokeStats v-if="pokePage.pokeItem" />
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <PokemonPokeEvolution v-if="pokePage.pokeItem" />
+                <div class="col-12 col-xl-4">
+                    <div class="poke-column">
+                        <!-- <PokemonPokeball /> -->
+                        <PokemonPokeEvolution v-if="pokePage.pokeItem" />
+                    </div>
                 </div>
             </div>
         </div>
