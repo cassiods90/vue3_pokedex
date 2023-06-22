@@ -47,11 +47,11 @@ $backgroundwater: #58abf6;
 
 /* ---------- BACKGROUND COLORS ---------- */
 $background-gradient-01: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
-$background-gradient-02: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
-$background-gradient-03: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+$background-gradient-02: linear-gradient(to right, #000428, #004e92);
+$background-gradient-03: linear-gradient(to right, #000000, #434343);
 $background-gradient-04: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%);
 $background-gradient-05: radial-gradient(circle 926px at 2.7% 11%, rgba(17, 29, 94, 1) 0%, rgba(6, 57, 84, 1) 90%);
-$background-gradient-06: linear-gradient(to right, #c9d6ff, #e2e2e2);
+$background-gradient-06: radial-gradient(rgb(34, 34, 34), rgb(0, 0, 0));
 
 /* ---------- FONTS ---------- */
 $JosefinSansLight: 'JosefinSans-Light';

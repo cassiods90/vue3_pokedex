@@ -12,7 +12,7 @@
                         <span class="text black bold">Growth Rate:</span>
                         <span class="text black"> {{ pokemon.growth_rate }}</span>
                     </div>
-                    <div class="poke-data-content-item d-flex justify-content-start align-items-start">
+                    <div class="poke-data-content-item d-flex justify-content-start align-items-start" v-if="pokemon.habitat">
                         <span class="text black bold">Habitat:</span>
                         <span class="text black"> {{ pokemon.habitat }}</span>
                     </div>

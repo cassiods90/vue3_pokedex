@@ -23,7 +23,6 @@
                 </div>
             </div>
         </div>
-
         <AppLoader v-if="pokePage.isLoading" />
     </div>
 </template>

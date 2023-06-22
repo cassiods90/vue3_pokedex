@@ -55,7 +55,7 @@ export const pokesArray = defineStore('poke', {
                     })
                 )
 
-                console.log('pokemons:', pokemons)
+                // console.log('pokemons => ', pokemons)
                 this.loading = false
                 this.pokemons = [...pokemons, ...this.pokemons] // Complete Array of Pokes
                 // this.filteredPokemons = [...pokemons, ...this.pokemons] // Filtered Array of pokes
