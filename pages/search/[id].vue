@@ -1,13 +1,51 @@
 <template>
-    <div class="pages poke-id-page">
-        <h1>Pokemons ID Page</h1>
-        {{ $route.params }}
+    <div class="pages poke-page">
+        <div class="container-fluid">
+            <PokemonPokeData v-if="pokePage.pokeItem" />
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <PokemonPokeDetails v-if="pokePage.pokeItem" />
+                </div>
+                <div class="col-12 col-md-4">
+                    <PokemonPokeStats v-if="pokePage.pokeItem" />
+                </div>
+                <div class="col-12 col-md-4">
+                    <PokemonPokeEvolution v-if="pokePage.pokeItem" />
+                </div>
+            </div>
+        </div>
 
-        <!-- 
-            "url": "https://pokeapi.co/api/v2/pokemon/1/"
-            route example to load date poke api
-         -->
+        <AppLoader v-if="pokePage.isLoading" />
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { pokePageArray } from '@/stores/pokePage'
+const pokePage = pokePageArray()
+
+function setBackgroundColor() {
+    const body = document.querySelector('body')
+    body.classList.add(`poke-back-${pokePage.pokeItem.types[0].name}`)
+}
+
+onMounted(() => {
+    const route = useRoute()
+
+    const pageId = route.params.id
+
+    pokePage
+        .getPoke(pageId)
+        .then(() => {
+            setBackgroundColor()
+        })
+        .catch((error) => {
+            console.log(`Error: ${error}`)
+        })
+})
+
+onBeforeUnmount(() => {
+    const body = document.querySelector('body')
+    body.classList.remove(`poke-back-${pokePage.pokeItem.types[0].name}`)
+    pokePage.pokemon = null
+})
+</script>

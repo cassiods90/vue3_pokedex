@@ -104,15 +104,14 @@ body {
     @include transition2(all, 0.5s, ease-in-out);
 }
 
-// svg,
-// path {
-//     fill: $white;
-// }
-
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.container-fluid {
+    max-width: 1920px;
 }
 
 .loader {
@@ -327,5 +326,241 @@ img {
     &:hover {
         background: darken($backgroundwater, 10%);
         box-shadow: rgba($backgroundwater, 0.2) 0px 20px 30px;
+    }
+}
+
+.poke-back-bug {
+    background: linear-gradient(to bottom, $black -50%, $backgroundbug 20%);
+}
+
+.poke-back-dark {
+    background: linear-gradient(to bottom, $black -50%, $backgrounddark 20%);
+}
+
+.poke-back-dragon {
+    background: linear-gradient(to bottom, $black -50%, $backgrounddragon 20%);
+}
+
+.poke-back-electric {
+    background: linear-gradient(to bottom, $black -50%, $backgroundelectric 20%);
+}
+
+.poke-back-fairy {
+    background: linear-gradient(to bottom, $black -50%, $backgroundfairy 20%);
+}
+
+.poke-back-fighting {
+    background: linear-gradient(to bottom, $black -50%, $backgroundfighting 20%);
+}
+
+.poke-back-fire {
+    background: linear-gradient(to bottom, $black -50%, $backgroundfire 20%);
+}
+
+.poke-back-flying {
+    background: linear-gradient(to bottom, $black -50%, $backgroundflying 20%);
+}
+
+.poke-back-ghost {
+    background: linear-gradient(to bottom, $black -50%, $backgroundghost 20%);
+}
+
+.poke-back-grass {
+    background: linear-gradient(to bottom, $black -50%, $backgroundgrass 20%);
+}
+
+.poke-back-ground {
+    background: linear-gradient(to bottom, $black -50%, $backgroundground 20%);
+}
+
+.poke-back-ice {
+    background: linear-gradient(to bottom, $black -50%, $backgroundice 20%);
+}
+
+.poke-back-normal {
+    background: linear-gradient(to bottom, $black -50%, $backgroundnormal 20%);
+}
+
+.poke-back-poison {
+    background: linear-gradient(to bottom, $black -50%, $backgroundpoison 20%);
+}
+
+.poke-back-psychic {
+    background: linear-gradient(to bottom, $black -50%, $backgroundpsychic 20%);
+}
+
+.poke-back-rock {
+    background: linear-gradient(to bottom, $black -50%, $backgroundrock 20%);
+}
+
+.poke-back-steel {
+    background: linear-gradient(to bottom, $black -50%, $backgroundsteel 20%);
+}
+
+.poke-back-water {
+    background: linear-gradient(to bottom, $black -50%, $backgroundwater 20%);
+}
+
+.poke-stats {
+    &.bug {
+        .stats-item-bar {
+            border-color: $backgroundbug !important;
+            .stats-item-bar-load {
+                background: $backgroundbug;
+            }
+        }
+    }
+
+    &.dark {
+        .stats-item-bar {
+            border-color: $backgrounddark !important;
+            .stats-item-bar-load {
+                background: $backgrounddark;
+            }
+        }
+    }
+
+    &.dragon {
+        .stats-item-bar {
+            border-color: $backgrounddragon !important;
+            .stats-item-bar-load {
+                background: $backgrounddragon;
+            }
+        }
+    }
+
+    &.electric {
+        .stats-item-bar {
+            border-color: $backgroundelectric !important;
+            .stats-item-bar-load {
+                background: $backgroundelectric;
+            }
+        }
+    }
+
+    &.fairy {
+        .stats-item-bar {
+            border-color: $backgroundfairy !important;
+            .stats-item-bar-load {
+                background: $backgroundfairy;
+            }
+        }
+    }
+
+    &.fighting {
+        .stats-item-bar {
+            border-color: $backgroundfighting !important;
+            .stats-item-bar-load {
+                background: $backgroundfighting;
+            }
+        }
+    }
+
+    &.fire {
+        .stats-item-bar {
+            border-color: $backgroundfire !important;
+            .stats-item-bar-load {
+                background: $backgroundfire;
+            }
+        }
+    }
+
+    &.flying {
+        .stats-item-bar {
+            border-color: $backgroundflying !important;
+            .stats-item-bar-load {
+                background: $backgroundflying;
+            }
+        }
+    }
+
+    &.ghost {
+        .stats-item-bar {
+            border-color: $backgroundghost !important;
+            .stats-item-bar-load {
+                background: $backgroundghost;
+            }
+        }
+    }
+
+    &.grass {
+        .stats-item-bar {
+            border-color: $backgroundgrass !important;
+            .stats-item-bar-load {
+                background: $backgroundgrass;
+            }
+        }
+    }
+
+    &.ground {
+        .stats-item-bar {
+            border-color: $backgroundground !important;
+            .stats-item-bar-load {
+                background: $backgroundground;
+            }
+        }
+    }
+
+    &.ice {
+        .stats-item-bar {
+            border-color: $backgroundice !important;
+            .stats-item-bar-load {
+                background: $backgroundice;
+            }
+        }
+    }
+
+    &.normal {
+        .stats-item-bar {
+            border-color: $backgroundnormal !important;
+            .stats-item-bar-load {
+                background: $backgroundnormal;
+            }
+        }
+    }
+
+    &.poison {
+        .stats-item-bar {
+            border-color: $backgroundpoison !important;
+            .stats-item-bar-load {
+                background: $backgroundpoison;
+            }
+        }
+    }
+
+    &.psychic {
+        .stats-item-bar {
+            border-color: $backgroundpsychic !important;
+            .stats-item-bar-load {
+                background: $backgroundpsychic;
+            }
+        }
+    }
+
+    &.rock {
+        .stats-item-bar {
+            border-color: $backgroundrock !important;
+            .stats-item-bar-load {
+                background: $backgroundrock;
+            }
+        }
+    }
+
+    &.steel {
+        .stats-item-bar {
+            border-color: $backgroundsteel !important;
+            .stats-item-bar-load {
+                background: $backgroundsteel;
+            }
+        }
+    }
+
+    &.water {
+        .stats-item-bar {
+            border-color: $backgroundwater !important;
+            .stats-item-bar-load {
+                background: $backgroundwater;
+            }
+        }
     }
 }

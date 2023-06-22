@@ -1,0 +1,178 @@
+.poke-data {
+    padding: 25px 0;
+    .poke-data-inner {
+        margin: 0 0;
+        > div {
+            margin: 0 0;
+        }
+        .poke-img {
+            width: 100%;
+            max-width: 200px;
+        }
+        .poke-content {
+            .pokemon-name {
+                padding: 10px 0;
+            }
+            .poke-types {
+                margin: 0 -10px;
+                .poke-type {
+                    margin: 0 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.poke-infos-card {
+    width: 100%;
+    height: 100%;
+    background: $white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.poke-details {
+    .poke-details-inner {
+        .poke-details-data {
+            padding-top: 45px;
+            .poke-data-content {
+                margin: -10px 0;
+                .poke-data-content-item {
+                    padding: 10px 0;
+                    span:nth-child(2) {
+                        padding-left: 10px;
+                    }
+                }
+                .poke-damage-relation {
+                    padding: 10px 0;
+                    .poke-types {
+                        margin: 5px -5px 0;
+                        .poke-type {
+                            margin: 5px;
+                            border-radius: 5px;
+                            width: 61px;
+                            height: 25px;
+                        }
+                        span {
+                            padding: 5px 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.poke-stats {
+    .poke-stats-items {
+        width: 100%;
+        margin: -10px 0;
+        .poke-stats-item {
+            width: 100%;
+            padding: 10px 0;
+            .item-base-stat {
+                width: 100px;
+            }
+            .stats-item-bar {
+                background: transparent;
+                width: 100%;
+                height: 15px;
+                border: 2px solid black;
+                margin: 0 10px;
+                border-radius: 10px;
+                .stats-item-bar-load {
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+.poke-evolution {
+    .poke-evolution-inner {
+        .poke-evolution-items {
+            width: 100%;
+            margin: -30px 0;
+            .no-evolution {
+                margin-top: 25px;
+            }
+            .poke-evolution-item {
+                width: 100%;
+                .poke-evolution-item-inner {
+                    padding: 30px 0;
+                    width: 100%;
+                    .poke-evolution-arrow {
+                        margin: 60px 0 30px;
+                        position: relative;
+                        .arrow {
+                            width: 0;
+                            height: 0;
+                            border-top: 30px solid transparent;
+                            border-bottom: 30px solid transparent;
+                            border-left: 36px solid #ebe9e9;
+                            border-right: 0;
+                            position: relative;
+                        }
+                        .arrow-body {
+                            width: 50px;
+                            height: 25px;
+                            background: linear-gradient(to right, transparent, #ebe9e9);
+                            display: block;
+                        }
+                        span {
+                            margin-top: 20px;
+                            white-space: nowrap;
+                            white-space: nowrap;
+                        }
+                    }
+                    .poke-evolution-image {
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .poke-data {
+        padding: 50px 0;
+        .poke-data-inner {
+            margin: -30px -10px 0;
+            > div {
+                margin: 0 10px;
+            }
+            .poke-img {
+                max-width: 300px;
+            }
+            .poke-content {
+                height: 300px;
+                .pokemon-name {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .poke-data {
+        padding: 50px 0;
+        .poke-data-inner {
+            margin: -80px -30px 0;
+            > div {
+                margin: 0 30px;
+            }
+            .poke-content {
+                .pokemon-name {
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1650px) {
+}
