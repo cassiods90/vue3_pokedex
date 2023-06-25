@@ -1,9 +1,13 @@
 <template>
     <div class="results-filter">
-        <div class="results-filter-content d-flex flex-column justify-content-center align-items-center">
-            <div class="filter-search">
-                <input placeholder="Type a pokemon name ..." @keyup="searchPoke" />
-                <SvgsIconSearch />
+        <div class="results-filter-inner d-flex flex-column justify-content-center align-items-center">
+            <div class="results-filter-options d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <SearchFilterTypes />
+
+                <div class="filter-search">
+                    <input placeholder="Type a pokemon name ..." @keyup="searchPoke" />
+                    <SvgsIconSearch />
+                </div>
             </div>
 
             <div class="filter-generations">

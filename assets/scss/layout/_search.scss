@@ -1,5 +1,8 @@
 .results-filter {
     padding: 50px 0 100px;
+    .results-filter-options {
+        width: 100%;
+    }
     .filter-search {
         position: relative;
         width: 80%;
@@ -28,6 +31,111 @@
             position: absolute;
             top: 10px;
             right: 15px;
+        }
+    }
+
+    .filter-types {
+        margin-bottom: 15px;
+        width: 80%;
+        max-width: 450px;
+        .filter-types-inner {
+            position: relative;
+            .filter-types-btn {
+                padding: 0 45px 0 15px;
+                width: 100%;
+                height: 50px;
+                outline: 0;
+                border: 0;
+                border-radius: 99px;
+                background-color: rgba($white, 0.1);
+                color: $white;
+                position: relative;
+                @include transition();
+                &:hover {
+                    box-shadow: rgba($secColor, 0.2) 0px 5px 15px 0px;
+                    svg {
+                        fill: $secColor;
+                    }
+                }
+                svg {
+                    @include transition();
+                    width: 25px;
+                    fill: $white;
+                    position: absolute;
+                    top: 13px;
+                    right: 10px;
+                }
+            }
+            .filter-types-menu {
+                z-index: 3;
+                position: absolute;
+                top: 60px;
+                background: $black;
+                padding: 15px;
+                width: 100%;
+                border-radius: 40px;
+                border: 1px solid rgba($secColor, 0.5);
+                box-shadow: rgba($secColor, 0.25) 0px 6px 12px -2px, rgba($secColor, 0.3) 0px 3px 7px -3px;
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($white, 0.1);
+                    border-radius: 40px;
+                    z-index: -1;
+                }
+                li {
+                    cursor: pointer;
+                    padding: 10px;
+                    &:first-child,
+                    &:nth-child(2) {
+                        width: 50%;
+                    }
+                    label {
+                        padding: 10px 0;
+                        cursor: pointer;
+                        .checkbox-input {
+                            appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            width: 17px;
+                            height: 17px;
+                            border-radius: 3px;
+                            border: 2px solid $secColor;
+                            background-color: transparent;
+                            &:before {
+                                content: '';
+                                display: block;
+                                width: 11px;
+                                height: 11px;
+                                margin: 1px;
+                                border-radius: 3px;
+                                border: 2px solid $secColor;
+                                background-color: $secColor;
+                                visibility: hidden;
+                            }
+                            &:checked {
+                                &:before {
+                                    visibility: visible;
+                                }
+                            }
+                        }
+
+                        img {
+                            margin-left: 5px;
+                            width: 61px;
+                            height: 25px;
+                            border-radius: 5px;
+                        }
+
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -117,6 +225,7 @@
         }
     }
 }
+
 @media (min-width: 768px) {
     .results-filter {
         .filter-generations {
@@ -124,6 +233,110 @@
                 max-width: 950px;
                 .gen-item {
                     margin: 20px 20px;
+                }
+            }
+        }
+
+        .filter-types {
+            margin: 0 15px 0 0;
+            width: auto;
+            .filter-types-inner {
+                position: relative;
+                .filter-types-btn {
+                    padding: 0 45px 0 15px;
+                    width: 100%;
+                    height: 50px;
+                    outline: 0;
+                    border: 0;
+                    border-radius: 99px;
+                    background-color: rgba($white, 0.1);
+                    color: $white;
+                    position: relative;
+                    @include transition();
+                    &:hover {
+                        box-shadow: rgba($secColor, 0.2) 0px 5px 15px 0px;
+                        svg {
+                            fill: $secColor;
+                        }
+                    }
+                    svg {
+                        @include transition();
+                        width: 25px;
+                        fill: $white;
+                        position: absolute;
+                        top: 13px;
+                        right: 10px;
+                    }
+                }
+                .filter-types-menu {
+                    z-index: 3;
+                    position: absolute;
+                    top: 60px;
+                    background: $black;
+                    padding: 15px;
+                    width: 342px;
+                    border-radius: 40px;
+                    border: 1px solid rgba($secColor, 0.5);
+                    box-shadow: rgba($secColor, 0.25) 0px 6px 12px -2px, rgba($secColor, 0.3) 0px 3px 7px -3px;
+                    &:before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba($white, 0.1);
+                        border-radius: 40px;
+                        z-index: -1;
+                    }
+                    li {
+                        cursor: pointer;
+                        padding: 10px;
+                        &:first-child,
+                        &:nth-child(2) {
+                            width: 50%;
+                        }
+                        label {
+                            padding: 10px 0;
+                            cursor: pointer;
+                            .checkbox-input {
+                                appearance: none;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 3px;
+                                border: 2px solid $secColor;
+                                background-color: transparent;
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    width: 11px;
+                                    height: 11px;
+                                    margin: 1px;
+                                    border-radius: 3px;
+                                    border: 2px solid $secColor;
+                                    background-color: $secColor;
+                                    visibility: hidden;
+                                }
+                                &:checked {
+                                    &:before {
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+
+                            img {
+                                margin-left: 5px;
+                                width: 61px;
+                                height: 25px;
+                                border-radius: 5px;
+                            }
+
+                            span {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }

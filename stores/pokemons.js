@@ -4,6 +4,8 @@ import axios from 'axios'
 export const pokesArray = defineStore('poke', {
     state: () => ({
         pokemons: [],
+        typeFilter: [],
+        filteredByType: [],
         filteredPokemons: [],
         loading: false,
         apiUrl: '',
@@ -64,9 +66,26 @@ export const pokesArray = defineStore('poke', {
                 console.log(`error => ${error}`)
             }
         },
+        // filterSearch(value) {
+        //     this.filterValue = value
+        //     this.filteredPokemons = this.pokemons.filter((pokemon) => pokemon.name.includes(this.filterValue))
+        // },
         filterSearch(value) {
             this.filterValue = value
-            this.filteredPokemons = this.pokemons.filter((pokemon) => pokemon.name.includes(this.filterValue))
+
+            this.filteredPokemons = this.pokemons.filter((pokemon) => {
+                // Verifica se o nome do Pokemon inclui o valor digitado no input
+                const nameMatch = pokemon.name.includes(this.filterValue)
+
+                // Verifica se pelo menos um tipo do Pokemon está presente nos tipos filtrados
+                const typeMatch = this.typeFilter.length === 0 || pokemon.types.some((type) => this.typeFilter.includes(type))
+
+                return nameMatch && typeMatch
+            })
+        },
+        filterType(value) {
+            this.typeFilter = value
+            this.filterSearch(this.filterValue)
         },
     },
 
@@ -76,6 +95,9 @@ export const pokesArray = defineStore('poke', {
         },
         isLoading(state) {
             return state.loading
+        },
+        filterTypes(state) {
+            return state.typeFilter
         },
     },
 })

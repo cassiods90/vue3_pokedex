@@ -29,6 +29,7 @@
 import { pokesArray } from '@/stores/pokemons'
 import badges from '@/assets/badges/badges'
 const pokemons = pokesArray()
+
 onMounted(() => {
     const genItems = document.querySelector('.gen-item:first-child')
     genItems.classList.add('active')
