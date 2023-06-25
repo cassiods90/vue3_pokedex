@@ -59,25 +59,16 @@ export const pokesArray = defineStore('poke', {
 
                 // console.log('pokemons => ', pokemons)
                 this.loading = false
-                this.pokemons = [...pokemons, ...this.pokemons] // Complete Array of Pokes
-                // this.filteredPokemons = [...pokemons, ...this.pokemons] // Filtered Array of pokes
+                this.pokemons = [...pokemons, ...this.pokemons]
                 this.filterSearch(this.filterValue)
             } catch (error) {
                 console.log(`error => ${error}`)
             }
         },
-        // filterSearch(value) {
-        //     this.filterValue = value
-        //     this.filteredPokemons = this.pokemons.filter((pokemon) => pokemon.name.includes(this.filterValue))
-        // },
         filterSearch(value) {
             this.filterValue = value
-
             this.filteredPokemons = this.pokemons.filter((pokemon) => {
-                // Verifica se o nome do Pokemon inclui o valor digitado no input
                 const nameMatch = pokemon.name.includes(this.filterValue)
-
-                // Verifica se pelo menos um tipo do Pokemon está presente nos tipos filtrados
                 const typeMatch = this.typeFilter.length === 0 || pokemon.types.some((type) => this.typeFilter.includes(type))
 
                 return nameMatch && typeMatch
