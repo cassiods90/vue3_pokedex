@@ -68,7 +68,7 @@ export const pokesArray = defineStore('poke', {
         filterSearch(value) {
             this.filterValue = value
             this.filteredPokemons = this.pokemons.filter((pokemon) => {
-                const nameMatch = pokemon.name.includes(this.filterValue)
+                const nameMatch = pokemon.name.toLowerCase().includes(this.filterValue)
                 const typeMatch = this.typeFilter.length === 0 || pokemon.types.some((type) => this.typeFilter.includes(type))
 
                 return nameMatch && typeMatch
