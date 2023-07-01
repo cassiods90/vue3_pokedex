@@ -1,0 +1,143 @@
+.minigame-content {
+    height: 100%;
+}
+
+.poke-reveal {
+    .poke-reveal-inner {
+        .poke-image {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            pointer-events: none;
+            &.corretName {
+                .poke-img {
+                    pointer-events: none;
+                    -webkit-filter: brightness(100%);
+                    filter: brightness(100%);
+                }
+            }
+            .poke-background {
+                opacity: 0.75;
+            }
+            .poke-img {
+                z-index: 2;
+                position: absolute;
+                top: 0;
+                left: 0;
+                -webkit-filter: brightness(0%);
+                filter: brightness(0%);
+                @include transition();
+            }
+        }
+        .poke-name {
+            min-height: 80px;
+            position: relative;
+            span {
+                margin-top: 30px;
+                width: 100%;
+                &:nth-child(2) {
+                    margin-top: 30px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.poke-guess {
+    width: 100%;
+    .poke-guess-inner {
+        .guess-input {
+            min-height: 85px;
+            width: 100%;
+            white-space: nowrap;
+            input {
+                padding: 0 15px;
+                width: 100%;
+                max-width: 410px;
+                height: 50px;
+                outline: 0;
+                border: 0;
+                border-radius: 99px;
+                background-color: rgba($white, 0.1);
+                color: $white;
+                @include transition();
+                &::placeholder {
+                    color: $white;
+                }
+                &:focus-visible {
+                    box-shadow: rgba($secColor, 0.2) 0px 5px 15px 0px;
+                }
+            }
+            span {
+            }
+        }
+        .guess-scoreboard {
+            padding: 50px 0 50px;
+        }
+        .guess-restart {
+            width: 100%;
+            .slider-range {
+                .custom-slider {
+                    // padding: 10px 0;
+                }
+            }
+            button {
+                margin: 15px 0 30px;
+                background: transparent;
+                padding: 15px 25px;
+                cursor: pointer;
+                border-radius: 15px;
+                border: 1px solid rgba($secColor, 0.5);
+                box-shadow: rgba($secColor, 0.25) 0px 6px 12px -2px, rgba($secColor, 0.3) 0px 3px 7px -3px;
+                @include transition();
+                &:hover,
+                &.active {
+                    span {
+                        color: rgba($secColor, 1);
+                    }
+                    background: linear-gradient(90deg, transparent, rgba($secColor, 0.1));
+                    box-shadow: 0 20px 25px -5px $secColor, 0 10px 10px -5px $secColor;
+                    box-shadow: rgba($secColor, 0.2) 0px 20px 30px;
+                }
+                span {
+                    @include transition();
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .minigame-content {
+        padding-top: 50px;
+    }
+
+    .poke-guess {
+        width: 100%;
+        .poke-guess-inner {
+            .guess-scoreboard {
+                padding: 100px 0 50px;
+            }
+            .guess-restart {
+                button {
+                    margin: 15px 0 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .poke-guess {
+        .poke-guess-inner {
+            .guess-restart {
+                button {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
