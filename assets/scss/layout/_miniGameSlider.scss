@@ -149,6 +149,7 @@
     position: absolute;
     pointer-events: none;
     width: 100%;
+    cursor: pointer;
 }
 .custom-slider.minmax input[type='range']::-webkit-slider-runnable-track {
     background: none;
