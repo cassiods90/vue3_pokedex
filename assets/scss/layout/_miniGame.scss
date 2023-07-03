@@ -12,7 +12,7 @@
             pointer-events: none;
             &.corretName {
                 .poke-img {
-                    pointer-events: none;
+                    pointer-events: auto;
                     -webkit-filter: brightness(100%);
                     filter: brightness(100%);
                 }
