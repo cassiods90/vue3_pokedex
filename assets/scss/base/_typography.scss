@@ -29,10 +29,6 @@
         font-family: $Pebble;
         color: $white;
     }
-    &.text-footer {
-        @include fluid-type(320px, 1680px, 13px, 20px);
-        color: $white;
-    }
     &.poke-id {
         font-family: $PoppinsBold;
         color: $baseColor;

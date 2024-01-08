@@ -27,5 +27,6 @@ const pokeRandom = pokeGameSorted()
 
 onMounted(() => {
     pokeRandom.sortPoke()
+    console.log('pokeRandom: ', pokeRandom)
 })
 </script>

@@ -1,16 +1,24 @@
 .footer-content {
     .personal-link {
-        a {
-            margin-left: 20px;
+        span {
             @include transition();
-            &:hover {
-                .cls-2 {
-                    fill: $secColor;
-                }
+        }
+        &:hover {
+            span {
+                color: $secColor;
             }
-            svg {
-                width: 40px;
-                height: 40px;
+            svg,
+            path {
+                fill: $secColor;
+            }
+        }
+        svg {
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            path {
+                @include transition();
+                fill: $white;
             }
         }
     }

@@ -1,5 +1,5 @@
 <template>
-    <span class="text text-footer"> &copy; Developed by Cassio Spessatto - {{ currentYear }} </span>
+    <span class="text small-text"> &copy; Developed by Cassio Spessatto - {{ currentYear }} </span>
 </template>
 
 <script setup>
